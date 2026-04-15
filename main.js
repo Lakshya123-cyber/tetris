@@ -116,7 +116,8 @@ class Tetris {
           realX < 0 ||
           realX >= squareCountX ||
           realY < 0 ||
-          realY >= squareCountY
+          realY >= squareCountY ||
+          gameMap[realY][realX].imageX != -1
         ) {
           this.template = tempTemplate;
           return false;
