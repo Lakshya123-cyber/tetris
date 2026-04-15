@@ -60,7 +60,7 @@ class Tetris {
           return false;
         }
 
-        if (gameMap[realY][realX - 1].imageX != -1) return false;
+        if (gameMap[realY][realX + 1].imageX != -1) return false;
       }
     }
 
